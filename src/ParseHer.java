@@ -22,16 +22,24 @@ public class ParseHer {
 
     }
     //Map<String,Integer>
-    public static int parse(String name) {
+    public static Map<String,Integer> parse(String name) {
         Map<String, Integer> map = new HashMap<>();
-        for (String w: RADICALS) {
-        int i = name.indexOf(w);
-        if (i!=(-1)) {
-            String s = name.substring(i, i+w.length());
-            return findIndexInArray(RADICALS, s)+1;
+        int x1 = 0;
+        int x2 = 0;
+        for (String w1 : RADICALS) {
+            int i = name.indexOf(w1);
+            if (i != (-1)) {
+                String s = name.substring(i, i + w1.length());
+                x1 = findIndexInArray(RADICALS, s) + 1;
+            }
         }
-        }
-        return -1;
-        // Parse the name given as argument in the constructor and output the Map representing the raw formula
-    }
-}
+        for (String w2 : ALKANES) {
+            int i = name.indexOf(w2);
+            if (i != (-1)) {
+                String s = name.substring(i, i + w2.length());
+                x2 = findIndexInArray(ALKANES, s) + 1;
+
+            }}
+            return null;
+            // Parse the name given as argument in the constructor and output the Map representing the raw formula
+    }}

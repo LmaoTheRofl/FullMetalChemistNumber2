@@ -1,8 +1,6 @@
 public class test {
     public static void main(String[] args) {
-        String b = "propane";
-        String[] RADICALS = {"meth", "eth", "prop"};
-      //  System.out.println(ParseHer.findIndexInArray(RADICALS, "meth"));
-       // System.out.println(ParseHer.parse(b));
+        System.out.println(new ParseHer("--meth55diprop-tribut5propmeth").parse());
+
     }
 }
